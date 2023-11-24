@@ -1,0 +1,9 @@
+<div class="color-groups">
+    <div class="color-group" v-for="group in color_groups">
+        <span class="color-group-title">{{group.title}}</span>
+        <div class="color-group-colors">
+            <span class="color-badge" v-for="color in group.colors" :style="{'--color': color}">{{color}}</span>
+        </div>
+    </div>
+</div>
+
